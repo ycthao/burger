@@ -25,3 +25,6 @@ let burger = {
         });
     }
 };
+
+// Exporting burger
+module.exports = burger;
