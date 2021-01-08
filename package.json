@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Burger app is a friendly restaurant app that lets user input names of burgers they'd like to eat.  Once the burger name is submited, the app will display the burger on the left side of the page under \"waiting to be devoured\" with a \"Devour it\" button next to it.  Once the \"Devour it\" buttom is pressed, the burger name will move to the right side of the page.",
+  "main": "server.js",
+  "scripts": {
+    "test": "none",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycthao/burger.git"
+  },
+  "keywords": [
+    "burger",
+    "restaurant"
+  ],
+  "author": "Yeem Chij Thao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ycthao/burger/issues"
+  },
+  "homepage": "https://github.com/ycthao/burger#readme"
+}
