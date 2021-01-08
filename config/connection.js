@@ -8,4 +8,13 @@ let connection = mysql.createConnection({
     user: "root",
     password: "",
     database: "burgers_db"
-})
+});
+
+// Making the connection
+connection.connect(function(err) {
+    if (err) {
+        console.error("Error connecting: " + err.stack);
+        return;
+    }
+    console.log("Connected as id " + connection.threadId);
+});
