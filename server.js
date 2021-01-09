@@ -1,6 +1,8 @@
 // Dependencies
 let express = require("express");
+// Set Handlebars
 let exphbs = require("express-handlebars");
+// Import routes and give the server access to them.
 let routes = require("./controllers/burgers_controller.js");
 
 // Defining port
