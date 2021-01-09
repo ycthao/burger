@@ -21,3 +21,6 @@ app.use(express.json());
 // Using handlebars
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+// calling app to use routes
+app.use(routes);
