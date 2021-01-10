@@ -25,7 +25,7 @@ function objToSql(ob) {
 };
 
 let orm = {
-    all: function(tableInput, cb) {
+    selectAll: function(tableInput, cb) {
         let queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function(err, res) {
             if (err) {
@@ -34,7 +34,7 @@ let orm = {
             cb(res);
         });
     },
-    create: function(table, cols, vals, cb) {
+    insertOne: function(table, cols, vals, cb) {
         let queryString = "INSERT INTO" + table;
         queryString += " ("; 
         queryString += cols.toString();
@@ -54,7 +54,7 @@ let orm = {
             cb(res);
         });
     },
-    update: function(table, objColVals, condition, cd) {
+    updateOne: function(table, objColVals, condition, cd) {
         let queryString = "UPDATE " + table;
         queryString += " SET " ;
         queryString += objToSql(objColVals);
