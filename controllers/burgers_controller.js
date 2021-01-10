@@ -16,7 +16,7 @@ router.get("/", function(req, res) {
 
 router.post("/api/burger", function(req, res) {
     burger.create([
-        "waiting", "devoured"
+        "waiting", "devour"
     ], [
         req.body.name, req.body.devour
     ], function(result) {
@@ -24,6 +24,21 @@ router.post("/api/burger", function(req, res) {
     });
 });
 
+router.put("/api/burger/:id", function(req, res) {
+    let condition = "id = " + req.params.id;
 
+    console.log("condition", condition);
+    
+    burger.update({
+        devour: req.body.devour
+    }, condition, function(result) {
+        if (result.changedRows == 0) {
+            return res.status(404).end();
+        } else {
+            res.status(200).end();
+        }
+    });
+});
 
+// Export router
 module.export = router;
