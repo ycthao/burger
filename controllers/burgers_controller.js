@@ -23,3 +23,7 @@ router.post("/api/burger", function(req, res) {
         res.json({ id: result.insertId });
     });
 });
+
+
+
+module.export = router;
