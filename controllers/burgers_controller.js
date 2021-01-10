@@ -2,10 +2,10 @@ let express = require("express");
 
 let router = express.Router();
 
-let burgerjs = require("../models/burger.js");
+let bjs = require("../models/burger.js");
 
 router.get("/", function(req, res) {
-    burgerjs.all(function(data) {
+    bjs.all(function(data) {
         let hbsObject = {
             burger: data
         };
@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burger", function(req, res) {
-    burgerjs.create([
+    bjs.create([
         "burger_name", "devoured"
     ], [
         req.body.burger_name, req.body.devoured
@@ -29,7 +29,7 @@ router.put("/api/burger/:id", function(req, res) {
 
     console.log("condition", condition);
     
-    burgerjs.update({
+    bjs.update({
         devoured: req.body.devoured
     }, condition, function(result) {
         if (result.changedRows == 0) {
