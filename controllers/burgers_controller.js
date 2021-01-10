@@ -13,3 +13,13 @@ router.get("/", function(req, res) {
         res.render("index", hbsObject);
     });
 });
+
+router.post("/api/burger", function(req, res) {
+    burger.create([
+        "waiting", "devoured"
+    ], [
+        req.body.name, req.body.devour
+    ], function(result) {
+        res.json({ id: result.insertId });
+    });
+});
