@@ -70,3 +70,6 @@ let orm = {
         });
     }
 };
+
+// Export the orm
+module.exports = orm;
