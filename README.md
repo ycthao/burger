@@ -1,14 +1,13 @@
 # Burger
 
-
 ![NPM](https://img.shields.io/npm/l/inquirer)
 
-## Description 
+## Description
 
-Burger app is a friendly restaurant app that lets user input names of burgers they'd like to eat.  Once the burger name is submited, the app will display the burger on the left side of the page under "waiting to be devoured" with a "Devour it" button next to it.  Once the "Devour it" buttom is pressed, the burger name will move to the right side of the page.
+Burger app is a friendly restaurant app that lets user input names of burgers they'd like to eat. Once the burger name is submited, the app will display the burger on the left side of the page under "waiting to be devoured" with a "Devour it" button next to it. Once the "Devour it" buttom is pressed, the burger name will move to the right side of the page.
 The app will store every burger in a database.
 
-## Table of Contents 
+## Table of Contents
 
 - [Description](#Description)
 - [Table of Contents](#Table-of-Contents)
@@ -20,28 +19,28 @@ The app will store every burger in a database.
 - [Author](#Author)
 - [Questions](#Question)
 
-## Installation 
+## Installation
 
 - This apps will require node.js and requires all packages listed in package.json file.
 - To download node.js, go to https://nodejs.org/en/ and download the current version.
 - Download server.js or clone repository from https://github.com/ycthao/burger
 - In Visual Studio Code, install all dependencies from the package.json file.
 - Run server.js using node command and opening the link provided once node is run.
-- Or simply open it directly from Heroku at ...
+- Or simply open it directly from Heroku at https://bcs-hw-burger.herokuapp.com/
 
-## Usage 
+## Usage
 
-![image]()
+![burgerusage](https://user-images.githubusercontent.com/71569747/110552428-f0808300-80fc-11eb-825a-212dc026ef4a.gif)
 
-## Contributing 
+## Contributing
 
 Yeem Chij Thao and any future contribution is welcome.
 
-## Tests 
+## Tests
 
 None
 
-## License 
+## License
 
 MIT License
 
@@ -65,13 +64,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Author 
+## Author
 
 Yeem Chij Thao
 
-## Question 
+## Question
 
 GitHub: https://github.com/ycthao
 
 For additional questions, please email me at yc.vangsouathao@hotmail.com
-  
