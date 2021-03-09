@@ -4,9 +4,14 @@ body {
     color: #13524c;
 }
 
-.center{
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; 
+    text-align: center;
+}
+
+.dState {
+    background-color: #13524c67;
+    border-style: dashed;
 }
