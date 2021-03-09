@@ -31,9 +31,9 @@
                 {{#if devoured}}
                 <li>
                     <p>{{this.burger_name}}
-                        <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                        <span class="dState change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
                             {{#if devoured}}Devoured{{else}}Devour it!{{/if}}
-                        </button>
+                        </span>
                     </p>
                 </li>
                 {{/if}}
