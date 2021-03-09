@@ -44,7 +44,7 @@ None
 
 MIT License
 
-Copyright (c) [2020] [Yeem Chij Thao]
+Copyright (c) [2021] [Yeem Chij Thao]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
