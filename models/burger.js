@@ -3,21 +3,21 @@ let orm = require("../config/orm.js");
 
 // Creating the function to export
 let bjs = {
-    selectAll: function (cb) {
-        orm.selectAll("burger", function (res) {
-            cb(res);
-        });
-    },
-    insertOne: function (cols, vals, cb) {
-        orm.insertOne("burger", cols, vals, function (res) {
-            cb(res);
-        });
-    },
-    updateOne: function (objColVals, condition, cb) {
-        orm.updateOne("burger", objColVals, condition, function (res) {
-            cb(res);
-        });
-    }
+  all: function (cb) {
+    orm.all("burger", function (res) {
+      cb(res);
+    });
+  },
+  create: function (cols, vals, cb) {
+    orm.create("burger", cols, vals, function (res) {
+      cb(res);
+    });
+  },
+  update: function (objColVals, condition, cb) {
+    orm.update("burger", objColVals, condition, function (res) {
+      cb(res);
+    });
+  },
 };
 
 // Exporting burger
